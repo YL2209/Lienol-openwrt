@@ -12,3 +12,6 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
+#更改主机型号，支持中文。 
+sed -i "s/Xiaomi MiWiFi Mini/星新课代表制作出品/g" target/linux/ramips/dts/mt7620a_xiaomi_miwifi-mini.dts
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
